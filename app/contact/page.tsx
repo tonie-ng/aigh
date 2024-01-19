@@ -62,7 +62,7 @@ function Page() {
 
       <LocalCommitee />
 
-      <section className={styles.advisors_section}>
+      /* <section className={styles.advisors_section}>
         <h3 className="section_title">Our Board of Advisors</h3>
         <div className={styles.advisors_container}>
           {AdvisorData.map((elem) => (
@@ -82,7 +82,7 @@ function Page() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */
 
       {/* <Map /> */}
     </main>

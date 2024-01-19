@@ -29,7 +29,7 @@ function StayConnected() {
               name="email"
               id=""
               required
-              placeholder="claraezejitu@gmail.com"
+              placeholder="hello@aiesecgh.net"
             />
             <SubmitBtn />
           </form>
