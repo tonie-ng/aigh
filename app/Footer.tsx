@@ -49,7 +49,7 @@ function Footer() {
           <Link href="/membership">Membership</Link>
         </div>
         <div className={styles.footer_container}>
-          <h4>Our Programs</h4>
+          <h4>Contact Us</h4>
           <Link href="tel:+233508581455">
             <FaPhone className={styles.logo} />
             +(233) 508581455

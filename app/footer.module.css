@@ -51,7 +51,8 @@
 .footer_container a {
   display: flex;
   align-items: center;
-  gap: 0rem;
+  gap: .5rem;
+	font-size: 0.8rem;
 }
 
 .footer_socials {
