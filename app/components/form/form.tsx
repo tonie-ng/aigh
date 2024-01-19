@@ -21,7 +21,7 @@ function Form() {
 
   let submiterror: boolean = false;
   const processForm: SubmitHandler<Inputs> = async (data) => {
-    const res = await fetch("https://dev--aigh.netlify.app/api/membership", {
+    const res = await fetch("/api/membership", {
       cache: "no-store",
       method: "POST",
       mode: "no-cors",
