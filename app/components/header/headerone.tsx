@@ -93,7 +93,7 @@ function ContactHeaderText() {
         dedicated <span>team.</span>
       </h1>
       <p>
-        AIESEC in Ghana prides itself in its a team of forward-thinking
+        AIESEC in Ghana prides itself as a team of forward-thinking
         individuals with a deep understanding of global issues who continually
         strive for excellence in leadership development.
       </p>
