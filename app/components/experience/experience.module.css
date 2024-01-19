@@ -1,0 +1,85 @@
+.section {
+  padding: var(--section-large-padding-y) var(--section-large-padding-x) 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: rgba(3, 126, 243, 0.04);
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  align-items: flex-end;
+}
+
+.card_top {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.card_top h4 {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 1rem;
+  font-size: var(--size-small-2);
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-weight: var(--text-bold-7);
+}
+
+.card_top p {
+  padding: 1rem;
+  font-size: var(--size-small-1);
+  width: 80%;
+}
+
+.card a {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--size-small-4);
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 60%;
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 80%;
+    gap: 3rem;
+  }
+
+  .card_top p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 100%;
+    gap: 3rem;
+  }
+
+  .card_top p {
+    width: 100%;
+  }
+}

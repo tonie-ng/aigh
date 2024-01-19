@@ -1,0 +1,238 @@
+.member_commitee_section {
+  padding: var(--section-large-padding-y) var(--section-large-padding-x) 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.member_commitee_section_span {
+  font-size: var(--size-small-1);
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.member_card_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.member_card {
+  flex: 0 0 30%;
+  display: flex;
+  border: 0.5px solid #abaaaa;
+  padding: 1rem;
+  border-radius: 1rem;
+  flex-direction: column;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.member_image {
+  width: 100%;
+  height: 12rem;
+  border-radius: 0.8rem;
+}
+
+.member_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
+.member_card_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.member_card_left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 80%;
+  white-space: nowrap;
+}
+
+.membername {
+  font-size: var(--size-small-3);
+}
+
+.member_role,
+.phonenumber,
+.email {
+  font-size: var(--size-small-1);
+}
+
+.advisors_section {
+  padding: var(--section-large-padding-y) var(--section-large-padding-x) 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.advisors_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.advisor_card {
+  flex: 1 1 22%;
+  display: flex;
+  border: 0.5px solid #abaaaa;
+  padding: 1rem;
+  border-radius: 1rem;
+  flex-direction: column;
+  gap: 1rem;
+  cursor: pointer;
+  height: 20rem;
+}
+
+.advisor_card:last-child {
+  flex: 1 1 22%;
+  border: none;
+  height: max-content;
+}
+.advisor_card:last-child .advisor_card_bottom {
+  flex: 1 1 22%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.advisor_card:last-child .advisor_card_bottom h4 {
+  font-size: var(--size-large2);
+}
+.advisor_card:last-child .advisor_card_bottom span {
+  font-size: var(--size-small-1);
+  width: 80%;
+}
+
+.advisor_card:last-child .advisor_image {
+  display: none;
+}
+
+.advisor_image {
+  width: 100%;
+  height: 12rem;
+  border-radius: 0.8rem;
+}
+
+.advisor_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .membername {
+    font-size: var(--size-small-2);
+  }
+
+  .member_role {
+    font-size: var(--size-small-0);
+    white-space: wrap;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .advisor_card {
+    flex: 1 1 30%;
+  }
+
+  .advisor_card:last-child {
+    flex: 1 1 30%;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .member_role,
+  .phonenumber,
+  .email {
+    white-space: nowrap;
+  }
+
+  .member_card {
+    flex: 0 0 45%;
+    display: flex;
+    border: 0.5px solid #abaaaa;
+    padding: 1rem;
+    border-radius: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .advisor_card {
+    flex: 1 1 35%;
+  }
+
+  .advisor_card:last-child {
+    flex: 1 1 35%;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .member_role {
+    white-space: wrap;
+  }
+  .member_card {
+    flex: 0 0 100%;
+    display: flex;
+    border: 0.5px solid #abaaaa;
+    padding: 1rem;
+    border-radius: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .member_commitee_section_span {
+    font-size: var(--size-small-0);
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .advisor_card:last-child .advisor_card_bottom span {
+    font-size: var(--size-small-1);
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .advisor_card {
+    flex: 1 1 100%;
+    display: flex;
+    border: 0.5px solid #abaaaa;
+    padding: 1rem;
+    border-radius: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    cursor: pointer;
+    height: max-content;
+  }
+
+  .advisors_container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

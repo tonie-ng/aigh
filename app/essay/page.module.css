@@ -1,0 +1,454 @@
+.benefits_section,
+.ready_section,
+.submission_section {
+  padding: var(--section-large-padding-y) var(--section-large-padding-x) 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.ready_section span {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.ready_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: max-content;
+  align-items: stretch;
+}
+
+.og_ol > li::marker {
+  content: counter(list-item) ")\2003";
+}
+
+.og_ol {
+  flex: 0 0 45%;
+  background: rgba(3, 126, 243, 0.2);
+  list-style-position: inside;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 100%;
+}
+
+.og_ol li {
+  line-height: 200%;
+}
+
+.benefits_container,
+.submission_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.benefits_container p {
+  border: 1px solid black;
+  font-size: var(--size-small-1);
+  line-height: 150%;
+  padding: 2rem;
+  border-radius: 1rem;
+  flex: 0 0 30%;
+  background: linear-gradient(
+    179deg,
+    rgba(254, 253, 243, 0.2) 13.17%,
+    rgba(209, 233, 255, 0.2) 81.16%,
+    rgba(254, 253, 243, 0.2) 100.11%,
+    rgba(209, 233, 255, 0.2) 141.45%
+  );
+  cursor: pointer;
+}
+
+.submission_card {
+  border: 1px solid black;
+  font-size: var(--size-small-1);
+  line-height: 150%;
+  padding: 2rem;
+  border-radius: 1rem;
+  flex: 0 0 30%;
+  background: linear-gradient(
+    179deg,
+    rgba(254, 253, 243, 0.2) 13.17%,
+    rgba(209, 233, 255, 0.2) 81.16%,
+    rgba(254, 253, 243, 0.2) 100.11%,
+    rgba(209, 233, 255, 0.2) 141.45%
+  );
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.submission_card h4 {
+  font-size: var(--size-small-3);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.partnership_section {
+  padding: var(--section-large-padding-y) var(--section-large-padding-x) 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.pharmaccessimg {
+  width: 30%;
+  height: 10rem;
+}
+
+.pharmaccessimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.partnership_bottom {
+  width: 100%;
+  height: max-content;
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.essay_title,
+.partnership_bottom p {
+  font-size: var(--size-small-1);
+  line-height: 160%;
+}
+
+.partnership_bottom h4 {
+  font-size: var(--size-small-3);
+}
+
+.partnership_card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: rgba(3, 126, 243, 0.2);
+  padding: 3rem;
+  width: 90%;
+  margin: 0 auto;
+}
+.bottom_p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.bottom_span {
+  font-size: var(--size-small-2);
+  font-weight: var(--text-bold-7);
+  color: var(--primary-color);
+}
+
+/* =========== About========= */
+.essay_about {
+  padding: var(--section-large-padding-y) var(--section-large-padding-x) 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.essay_left {
+  flex: 0 0 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.essay_image {
+  width: 90%;
+  height: 30rem;
+  border-radius: 0.5rem;
+}
+
+.essay_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.essay_right {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.essay_right h3 {
+  text-align: start;
+}
+.essay_right p {
+  font-size: var(--size-small-1);
+  line-height: 142.857%;
+  text-align: justify;
+}
+
+.essay3_image {
+  border-radius: 0.5rem;
+  width: 60%;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.essaygold_img {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+}
+
+.essaygold_img:first-child {
+  right: -8%;
+  top: -7%;
+}
+
+.essaygold_img:last-child {
+  bottom: -8%;
+  left: -8%;
+}
+
+.essay3_image_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+/* ============ FOCUS =============== */
+.essay_focus {
+  padding: var(--section-large-padding-y) var(--section-large-padding-x) 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.focus_left {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.focus_left h3 {
+  text-align: start;
+}
+
+.focus_left p {
+  font-size: var(--size-small-1);
+  line-height: 142.857%;
+  text-align: justify;
+}
+.focus_right {
+  flex: 0 0 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.focus_image {
+  width: 80%;
+  height: 20rem;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.focus_small_img {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+}
+
+.focus_small_img:first-child {
+  top: -5%;
+  left: -5%;
+}
+
+.focus_small_img:last-child {
+  bottom: -5%;
+  right: -5%;
+}
+
+.focus_image_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.africa_map {
+  width: 80%;
+  height: 20rem;
+  border-radius: 0.5rem;
+}
+.africa_map img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .partnership_bottom {
+    width: 100%;
+    height: max-content;
+    padding: 0;
+    gap: 3rem;
+  }
+
+  .partnership_card {
+    gap: 1rem;
+    background: rgba(3, 126, 243, 0.2);
+    padding: 2rem 1rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .bottom_p {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .og_ol {
+    flex: 0 0 48%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .submission_card h4 {
+    font-size: 1.3rem;
+  }
+  .essay_about {
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .essay_focus {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+  .essay3_image {
+    width: 50%;
+    height: 25rem;
+  }
+
+  .focus_image {
+    width: 50%;
+    height: 20rem;
+    border-radius: 0.5rem;
+  }
+  .essay_image {
+    width: 50%;
+    height: 30rem;
+    border-radius: 0.5rem;
+  }
+
+  .benefits_container,
+  .submission_container {
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .benefits_container p,
+  .submission_card {
+    padding: 1.5rem;
+    flex: 0 0 46%;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .essay_image {
+    width: 70%;
+    height: 30rem;
+    border-radius: 0.5rem;
+  }
+  .focus_image {
+    width: 70%;
+    height: 20rem;
+    border-radius: 0.5rem;
+  }
+
+  .essay3_image {
+    width: 70%;
+    height: 28rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .benefits_container,
+  .submission_container {
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .benefits_container p,
+  .submission_card {
+    padding: 1.5rem;
+    flex: 0 0 70%;
+  }
+  .ready_container {
+    flex-direction: column;
+  }
+  .og_ol {
+    flex: 0 0 48%;
+  }
+
+  .ready_section span {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pharmaccessimg {
+    width: 70%;
+    height: 10rem;
+  }
+
+  .pharmaccessimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .partnership_bottom {
+    width: 100%;
+    height: max-content;
+    padding: 0;
+    gap: 2rem;
+  }
+  .essay_image {
+    width: 80%;
+    height: 30rem;
+    background-color: aquamarine;
+    border-radius: 0.5rem;
+  }
+  .focus_image {
+    width: 80%;
+    height: 20rem;
+    border-radius: 0.5rem;
+  }
+
+  .essay3_image {
+    width: 80%;
+    height: 25rem;
+  }
+
+  .benefits_container p,
+  .submission_card {
+    padding: 1.5rem;
+    flex: 0 0 100%;
+  }
+}
