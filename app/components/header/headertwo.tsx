@@ -61,7 +61,7 @@ function RecruitingHeader() {
         you and me who want to make a difference in the world and be the best
         they can be!
       </p>
-      <Link href="/membership">Explore Our Programs</Link>
+      <Link href="/membership">Become a member</Link>
     </>
   );
 }
