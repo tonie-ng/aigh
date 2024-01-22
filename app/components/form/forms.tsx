@@ -55,8 +55,10 @@ export function FirstForm({ register, errors }: FormProps) {
       <div className={styles.form_input}>
         <label>Phone Number</label>
         <input
-          type="number"
+          type="tel"
           placeholder="09138308323"
+					minLength={11}
+					maxLength={15}
           {...register("phonenumber")}
         />
         <p style={{ color: "red", fontSize: "0.8rem" }}>
@@ -131,6 +133,7 @@ export function ThirdForm({ register, errors }: FormProps) {
           autoFocus
           type="number"
           placeholder="2"
+					min="1"
           {...register("yearofstudy")}
         />
         <p style={{ color: "red", fontSize: "0.8rem" }}>

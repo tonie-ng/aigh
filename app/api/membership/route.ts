@@ -49,6 +49,7 @@ export async function POST(req: NextRequest) {
             data.yearofstudy,
             data.employmentstatus,
             data.note,
+						new Date().toUTCString()
           ],
         ],
       },
@@ -64,6 +65,6 @@ export async function POST(req: NextRequest) {
     });
   } catch (error) {
     console.log(error);
-    return NextResponse.json(error, { status: 500 });
+    return NextResponse.json("An error occured in the client", { status: 500 });
   }
 }

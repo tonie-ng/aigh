@@ -8,6 +8,7 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import { z } from "zod";
 import styles from "./form.module.css";
 import { FirstForm, SecondForm, ThirdForm } from "./forms";
+import { useState } from "react";
 
 function Form() {
   const {
@@ -19,7 +20,9 @@ function Form() {
     formState: { errors, isSubmitting, isSubmitSuccessful },
   } = useForm<Inputs>({ resolver: zodResolver(FormDataSchema) });
 
-  let submiterror: boolean = false;
+	const [submiterror, setSubmiterror] = useState<boolean>(false)
+	const [submitMessage, setSubmitMessage] = useState<string>("Thank you! We'll be in touch soon.")
+
   const processForm: SubmitHandler<Inputs> = async (data) => {
     const res = await fetch("/api/membership", {
       cache: "no-store",
@@ -28,11 +31,10 @@ function Form() {
       body: JSON.stringify(data),
     });
 
-    if (res.status != 201) {
-      submiterror = true;
-      reset();
-      return;
-    }
+		if (res.status != 201) {
+			setSubmiterror(true)
+			setSubmitMessage("An error occured, please try again")
+		}
     reset();
   };
 
@@ -60,11 +62,9 @@ function Form() {
             color: submiterror ? "red" : isSubmitSuccessful ? "green" : "black",
           }}
         >
-          {submiterror
-            ? "An error occured, please try again"
-            : isSubmitSuccessful
-            ? "Thank you! We'll be in touch soon."
-            : "Membership Registration"}
+					{
+						isSubmitSuccessful ? submitMessage : "Membership Registration"
+					}
         </h3>
 
         <span className={styles.form_index}>
