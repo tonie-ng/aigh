@@ -7,10 +7,12 @@ export const FormDataSchema = z.object({
     .string()
     .min(1, "email is required")
     .email("provide a valid email address"),
-  phonenumber: z.coerce.number().min(1, "phone number is required"),
+  phonenumber: z.coerce.number({
+		invalid_type_error: "expected a number"
+	}).min(1, "phone number is required"),
   dateofbirth: z.coerce
     .date()
-    .max(new Date("2008-01-01"), { message: "Must be up to 16" }),
+    .max(new Date("2008-01-01"), { message: "must be up to 16" }),
   nationality: z.string().min(1, "nationality is required"),
   university: z.string().min(1, "university is required"),
   course: z.string().min(1, "course of study is required"),
