@@ -48,7 +48,7 @@ function HomeHeaderText() {
   return (
     <>
       <h1>
-        Develop your <span>leadership </span>skills with us!
+        Develop your<br /><span>leadership</span><br/>skills with us!
       </h1>
       <p>
         At AIESEC, we believe that young people are the driving force for

@@ -2,6 +2,7 @@ import { Inputs } from "@/lib/schema";
 import fs from "fs";
 import { google } from "googleapis";
 import { NextRequest, NextResponse } from "next/server";
+import { nanoid } from "nanoid"
 import path from "path";
 
 export async function GET(req: NextRequest) {
@@ -31,11 +32,12 @@ export async function POST(req: NextRequest) {
 
     const response = await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.GOOGLE_SHEET_ID,
-      range: "A1:K1",
+      range: "A1:L1",
       valueInputOption: "USER_ENTERED",
       requestBody: {
         values: [
           [
+						nanoid(),
             data.fullname,
             data.email,
             data.gender,
