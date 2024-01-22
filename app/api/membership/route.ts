@@ -42,7 +42,7 @@ export async function POST(req: NextRequest) {
             data.email,
             data.gender,
             data.phonenumber,
-            data.dateofbirth.toDateString(),
+						new Date(data.dateofbirth).toDateString(),
             data.nationality,
             data.university,
             data.course,
