@@ -8,17 +8,7 @@ function StayConnected() {
     "use server";
 
     const email = formData.get("email");
-
-    const data: { email: FormDataEntryValue | null } = {
-      email,
-    };
-
-    const res = await fetch("https://aiesecgh.net/api/newsletter", {
-      cache: "no-store",
-      method: "POST",
-      mode: "no-cors",
-      body: JSON.stringify(data),
-    });
+    console.log(email);
   };
   return (
     <section className={styles.stayconnected_section}>
