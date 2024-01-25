@@ -2,10 +2,6 @@ import { google } from "googleapis";
 import { nanoid } from "nanoid";
 import { NextRequest, NextResponse } from "next/server";
 
-export async function GET(req: NextRequest) {
-  return NextResponse.json("Hello");
-}
-
 export async function POST(req: NextRequest) {
   try {
     const data = await req.json();
@@ -38,7 +34,6 @@ export async function POST(req: NextRequest) {
     return NextResponse.json(response.data, {
       status: 201,
       headers: {
-        "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Access-Control-Allow-Headers": "Content-Type, Authorization",
       },

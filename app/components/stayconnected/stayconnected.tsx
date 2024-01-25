@@ -1,15 +1,22 @@
-import SubscribeBackground from "@/public/subscribebg.png";
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import { subscribe } from "./actions";
 import styles from "./stayconnected.module.css";
 import { SubmitBtn } from "./submitbtn";
 
 function StayConnected() {
-  const subscribe = async (formData: FormData) => {
-    "use server";
+  const [message, setMessage] = useState<string>("");
+  const [error, setError] = useState<boolean>(false);
+  const [success, setSuccess] = useState<boolean>(false);
 
-    const email = formData.get("email");
-    console.log(email);
-  };
+  async function onSubscribe(formData: FormData) {
+    const res = await subscribe(formData);
+    setMessage(res.message);
+    setError(res.error);
+    setSuccess(res.success);
+    const formElement = document.forms[0];
+    formElement.reset();
+  }
   return (
     <section className={styles.stayconnected_section}>
       <h3 className="section_title">Stay Connected</h3>
@@ -20,7 +27,7 @@ function StayConnected() {
             aligns with your interest.
           </p>
           <form
-            action={subscribe}
+            action={onSubscribe}
             className={styles.subscribe_form}
             name="subsribe"
           >
@@ -31,7 +38,7 @@ function StayConnected() {
               required
               placeholder="hello@aiesecgh.net"
             />
-            <SubmitBtn />
+            <SubmitBtn error={error} success={success} />
           </form>
         </div>
       </div>

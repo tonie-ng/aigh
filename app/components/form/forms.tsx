@@ -19,7 +19,7 @@ export function FirstForm({ register, errors }: FormProps) {
         <input
           type="text"
           autoFocus
-          placeholder="Clare Jitu"
+          placeholder="John Doe"
           {...register("fullname")}
         />
         <p style={{ color: "red", fontSize: "0.8rem" }}>
@@ -31,7 +31,7 @@ export function FirstForm({ register, errors }: FormProps) {
         <label>Email Address</label>
         <input
           type="text"
-          placeholder="niyi@gmail.com"
+          placeholder="hello@aiesecgh.net"
           {...register("email")}
         />
         <p style={{ color: "red", fontSize: "0.8rem" }}>
@@ -56,9 +56,9 @@ export function FirstForm({ register, errors }: FormProps) {
         <label>Phone Number</label>
         <input
           type="tel"
-          placeholder="09138308323"
-					minLength={11}
-					maxLength={15}
+          placeholder="2238308323"
+          minLength={11}
+          maxLength={15}
           {...register("phonenumber")}
         />
         <p style={{ color: "red", fontSize: "0.8rem" }}>
@@ -89,7 +89,7 @@ export function SecondForm({ register, errors }: FormProps) {
         <label>Nationality</label>
         <input
           type="text"
-          placeholder="Nigerian"
+          placeholder="Ghanaian"
           {...register("nationality")}
         />
         <p style={{ color: "red", fontSize: "0.8rem" }}>
@@ -133,7 +133,7 @@ export function ThirdForm({ register, errors }: FormProps) {
           autoFocus
           type="number"
           placeholder="2"
-					min="1"
+          min="1"
           {...register("yearofstudy")}
         />
         <p style={{ color: "red", fontSize: "0.8rem" }}>
@@ -156,7 +156,11 @@ export function ThirdForm({ register, errors }: FormProps) {
 
       <div className={styles.form_input}>
         <label>How did you hear about AIESEC ?</label>
-        <textarea rows={10} {...register("note")}></textarea>
+        <textarea
+          rows={10}
+          {...register("note")}
+          placeholder="Note..."
+        ></textarea>
         <p style={{ color: "red", fontSize: "0.8rem" }}>
           {errors.note?.message}
         </p>

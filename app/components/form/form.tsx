@@ -4,11 +4,11 @@ import { FormDataSchema, Inputs } from "@/lib/schema";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { z } from "zod";
 import styles from "./form.module.css";
 import { FirstForm, SecondForm, ThirdForm } from "./forms";
-import { useState } from "react";
 
 function Form() {
   const {
@@ -20,21 +20,23 @@ function Form() {
     formState: { errors, isSubmitting, isSubmitSuccessful },
   } = useForm<Inputs>({ resolver: zodResolver(FormDataSchema) });
 
-	const [submiterror, setSubmiterror] = useState<boolean>(false)
-	const [submitMessage, setSubmitMessage] = useState<string>("Thank you! We'll be in touch soon.")
+  const [submiterror, setSubmiterror] = useState<boolean>(false);
+  const [submitMessage, setSubmitMessage] = useState<string>(
+    "Thank you! We'll be in touch soon."
+  );
 
   const processForm: SubmitHandler<Inputs> = async (data) => {
     const res = await fetch("/api/membership", {
       cache: "no-store",
       method: "POST",
-      mode: "no-cors",
+      mode: "same-origin",
       body: JSON.stringify(data),
     });
 
-		if (res.status != 201) {
-			setSubmiterror(true)
-			setSubmitMessage("An error occured, please try again")
-		}
+    if (res.status != 201) {
+      setSubmiterror(true);
+      setSubmitMessage("An error occured, please try again");
+    }
     reset();
   };
 
@@ -62,9 +64,7 @@ function Form() {
             color: submiterror ? "red" : isSubmitSuccessful ? "green" : "black",
           }}
         >
-					{
-						isSubmitSuccessful ? submitMessage : "Membership Registration"
-					}
+          {isSubmitSuccessful ? submitMessage : "Membership Registration"}
         </h3>
 
         <span className={styles.form_index}>
