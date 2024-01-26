@@ -10,9 +10,9 @@ function StayConnected() {
   const [success, setSuccess] = useState<boolean>(false);
 
   async function onSubscribe(formData: FormData) {
-    /* const res = await subscribe(formData);
+    const res = await subscribe(formData);
     setError(res.error);
-    setSuccess(res.success); */
+    setSuccess(res.success);
     const formElement = document.forms[0];
     formElement.reset();
   }

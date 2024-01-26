@@ -21,6 +21,7 @@ export const subscribe = async (
       success: true,
     });
   } catch (error) {
+		console.log(error);
     return Promise.resolve({
       error: true,
       success: false,
