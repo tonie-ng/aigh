@@ -29,9 +29,10 @@ function StayConnected() {
 
 		if (res.status != 201) {
 			setError(true);
-			reset();
+			setSuccess(false);
 		} else {
 			setSuccess(true);
+			setError(false);
 			reset();
 		}
 	}

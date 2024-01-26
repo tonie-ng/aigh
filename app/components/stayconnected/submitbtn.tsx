@@ -24,7 +24,7 @@ export function SubmitBtn({
       {pending ? (
         <FontAwesomeIcon icon={faSpinner} />
       ) : error ? (
-        "Error"
+        "Retry"
       ) : success ? (
         "Successful!"
       ) : (
