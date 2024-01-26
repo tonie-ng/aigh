@@ -1,18 +1,16 @@
-"use client";
-
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useFormStatus } from "react-dom";
 import styles from "./stayconnected.module.css";
 
 export function SubmitBtn({
   error,
   success,
+	pending,
 }: {
   error: boolean;
   success: boolean;
+	pending: boolean
 }) {
-  const { pending } = useFormStatus();
 
   return (
     <button
