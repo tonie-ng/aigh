@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import { subscribe } from "./actions";
 import styles from "./stayconnected.module.css";
@@ -9,12 +10,13 @@ function StayConnected() {
   const [success, setSuccess] = useState<boolean>(false);
 
   async function onSubscribe(formData: FormData) {
-    const res = await subscribe(formData);
+    /* const res = await subscribe(formData);
     setError(res.error);
-    setSuccess(res.success);
+    setSuccess(res.success); */
     const formElement = document.forms[0];
     formElement.reset();
   }
+
   return (
     <section className={styles.stayconnected_section}>
       <h3 className="section_title">Stay Connected</h3>
