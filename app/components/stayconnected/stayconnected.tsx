@@ -11,8 +11,8 @@ function StayConnected() {
 
   async function onSubscribe(formData: FormData) {
     const res = await subscribe(formData);
-    setError(res.error);
-    setSuccess(res.success);
+    setError(res?.error);
+    setSuccess(res?.success);
     const formElement = document.forms[0];
     formElement.reset();
   }
