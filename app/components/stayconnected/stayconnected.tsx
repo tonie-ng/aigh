@@ -5,13 +5,11 @@ import styles from "./stayconnected.module.css";
 import { SubmitBtn } from "./submitbtn";
 
 function StayConnected() {
-  const [message, setMessage] = useState<string>("");
   const [error, setError] = useState<boolean>(false);
   const [success, setSuccess] = useState<boolean>(false);
 
   async function onSubscribe(formData: FormData) {
     const res = await subscribe(formData);
-    setMessage(res.message);
     setError(res.error);
     setSuccess(res.success);
     const formElement = document.forms[0];

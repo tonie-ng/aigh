@@ -2,7 +2,7 @@
 
 export const subscribe = async (
   formData: FormData
-): Promise<{ message: string; error: boolean; success: boolean }> => {
+): Promise<{ error: boolean; success: boolean }> => {
   try {
     const email = formData.get("email") as string;
 
@@ -17,13 +17,11 @@ export const subscribe = async (
       body: JSON.stringify(data),
     });
     return Promise.resolve({
-      message: "Success!",
       error: false,
       success: true,
     });
   } catch (error) {
     return Promise.resolve({
-      message: "An error occured, please try again",
       error: true,
       success: false,
     });
