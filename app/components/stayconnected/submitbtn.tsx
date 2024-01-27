@@ -26,7 +26,7 @@ export function SubmitBtn({
       ) : error ? (
         "Retry"
       ) : success ? (
-        "Successful!"
+        "Thank you!"
       ) : (
         "Subscribe"
       )}
