@@ -185,7 +185,7 @@
 .blog_right p {
   font-size: var(--size-small-1);
   line-height: 160.857%;
-  text-align: justify;
+  text-align: left;
 }
 
 .blog_right a {
@@ -347,7 +347,7 @@
 
   .about_right p {
     line-height: 160.857%;
-    text-align: justify;
+    text-align: left;
   }
 
   .blog_image {

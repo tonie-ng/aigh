@@ -192,7 +192,7 @@
 .essay_right p {
   font-size: var(--size-small-1);
   line-height: 142.857%;
-  text-align: justify;
+  text-align: left;
 }
 
 .essay3_image {
@@ -250,7 +250,7 @@
 .focus_left p {
   font-size: var(--size-small-1);
   line-height: 142.857%;
-  text-align: justify;
+  text-align: left;
 }
 .focus_right {
   flex: 0 0 35%;

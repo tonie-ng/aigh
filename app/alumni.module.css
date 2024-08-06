@@ -65,7 +65,7 @@
 
   .bottom p {
     font-size: var(--size-small-0);
-    text-align: justify;
+    text-align: left;
   }
 }
 
