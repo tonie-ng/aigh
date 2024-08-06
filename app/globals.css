@@ -115,6 +115,7 @@ button {
 @media screen and (max-width: 980px) {
 	:root {
 		--section-large-padding-x: 3rem;
+		--section-large-padding-y: 8rem;
 	}
 }
 
@@ -133,5 +134,6 @@ button {
 @media screen and (max-width: 480px) {
 	:root {
 		--section-large-padding-x: 1rem;
+		--section-large-padding-y: 6rem;
 	}
 }
