@@ -54,29 +54,12 @@ function Nav() {
         </li>
         <li
           className={
-            path == "/programs"
-              ? `${styles.nav__list_item} ${styles.active_nav_item} ${styles.nav_program_container}`
-              : `${styles.nav__list_item} ${styles.nav_program_container}`
+            path == "/volunteer"
+              ? `${styles.nav__list_item} ${styles.active_nav_item}`
+              : styles.nav__list_item
           }
         >
-          <div
-            className={styles.nav_program}
-            onClick={() => setDropDown(!dropDown)}
-          >
-            Programs <IoIosArrowDown />
-          </div>
-          <ul
-            className={
-              dropDown ? styles.dropdown_menu_active : styles.dropdown_menu
-            }
-          >
-            <li className={styles.dropdown_item}>
-              <Link href="/volunteer">Volunteer with AIESEC</Link>
-            </li>
-            <li className={styles.dropdown_item}>
-              <Link href="/essay">Essay competition</Link>
-            </li>
-          </ul>
+          <Link href="/volunteer">Volunteer</Link>
         </li>
         <li
           className={

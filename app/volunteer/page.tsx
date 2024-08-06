@@ -29,7 +29,7 @@ function Page() {
         linktext="Become a Volunteer"
       />
 
-      <FourCardLayout
+      <ReverseFourCardLayout
         images={section1images}
         button={true}
         color="#F85A40"
@@ -40,7 +40,7 @@ function Page() {
         span=" Global Volunteer."
       />
 
-      <ReverseFourCardLayout
+      <FourCardLayout
         images={section2images}
         button={true}
         color="#0CB9C1"
@@ -51,7 +51,7 @@ function Page() {
         span=" Global Intern."
       />
 
-      <FourCardLayout
+      <ReverseFourCardLayout
         images={section3images}
         button={true}
         color="#F48924"
@@ -60,13 +60,6 @@ function Page() {
         text="Our Global Teacher program offer educators a platform to transcend borders, cultivate cross-cultural competence, and inspire students worldwide. Join us in shaping a future where education knows no bounds."
         linktext="Become A Global Teacher"
         span=" Global Teacher."
-      />
-
-      <Experience
-        title="Our Volunteering Opportunities"
-        subtitle="Volunteering"
-        href="https://forms.gle/wGKSSioNhSoMdMvN9"
-        text="Enter the world of volunteering opportunities that AIESEC has to offer in Ghana and 180+ countries all over the world, directly impacting the lives of thousands all over the world, contributing to making the world a better place for us and generations to come after us!"
       />
 
       <Testimonial />

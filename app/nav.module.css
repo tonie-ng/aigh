@@ -4,7 +4,7 @@
   justify-content: space-around;
   z-index: 100;
   position: sticky;
-  padding: 2rem var(--section-large-padding-x) 0.5rem;
+  padding: 1rem var(--section-large-padding-x);
   font-weight: var(--text-bold-4);
   font-size: var(--size-small-1);
   color: (--black-color);

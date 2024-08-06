@@ -20,7 +20,6 @@ import FourCardLayout from "./components/fourcard/fourcard";
 import HeaderOne from "./components/header/headerone";
 import MorePartnersSection from "./components/partners/morepartners";
 import { Partners } from "./components/partners/partners";
-import PartnerWithUs from "./components/partnerwithus/partnerwithus";
 import StayConnected from "./components/stayconnected/stayconnected";
 import { HeaderOneType, PartnerType } from "./components/types";
 import { ProgramsData } from "./data/programs";
@@ -135,8 +134,7 @@ function Page() {
 			{/* <MorePartnersSection /> */}
       {/* Our Partners */}
       <Partners type={PartnerType.SHORT} title="Our Partners" />
-      {/* Partner With Us Section */}
-      <PartnerWithUs />
+
       {/* Find Us in Any of These Schools */}
       <FindUsSection />
       <StayConnected />

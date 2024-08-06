@@ -30,9 +30,7 @@
 }
 
 .fourcard_left p {
-  font-size: var(--size-small-2);
   width: 80%;
-  line-height: 160.857%;
 }
 
 .fourcard_left_circle {
@@ -129,9 +127,7 @@
   }
 
   .fourcard_left p {
-    font-size: var(--size-small-2);
     width: 100%;
-    line-height: 160.857%;
   }
 
   .fourcard_left_button {
@@ -163,10 +159,6 @@
 
   .fourcard_image_container {
     gap: 1rem;
-  }
-
-  .fourcard_left p {
-    text-align: left;
   }
 }
 

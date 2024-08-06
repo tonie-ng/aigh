@@ -21,115 +21,77 @@ import { FaArrowRight } from "react-icons/fa";
 import FourCardLayout from "../components/fourcard/fourcard";
 import ReverseFourCardLayout from "../components/fourcard/reversefourcard";
 import Headertwo from "../components/header/headertwo";
-import PartnerWithUs from "../components/partnerwithus/partnerwithus";
 import { HeaderTwoType } from "../components/types";
 import styles from "./page.module.css";
 
 function Page() {
-  return (
-    <main>
-      <Headertwo
-        type={HeaderTwoType.PROJECTS}
-        linktext="Explore Our Programs"
-        href=""
-        images={projectheaderimages}
-      />
-
-      <FourCardLayout
-        images={section2images}
-        button={false}
-        color="#037EF3"
-        title="Project Name: Youth & Health Activism."
-        subtitle="Youth & Health Activism"
-        href=""
-        text="In partnership with PharmAccess and Grand Casamora, we launched this event to empower and inspire youth to become proactive advocates for improved health and wellness in their communities. Creating a future where every young person is equipped with the knowledge, resources, and motivation to address critical health issues."
-      />
-
-      <ReverseFourCardLayout
-        images={section3images}
-        button={false}
-        color="#037EF3"
-        title="Event Name: Alumni & Stakeholders Dinner."
-        subtitle="Alumni &
+	return (
+		<main>
+			<Headertwo
+				type={HeaderTwoType.PROJECTS}
+				linktext="Explore Our Programs"
+				href=""
+				images={projectheaderimages}
+			/>
+			<ReverseFourCardLayout
+				images={section3images}
+				button={false}
+				color="#037EF3"
+				title="Event Name: Alumni & Stakeholders Dinner."
+				subtitle="Alumni &
 				Stakeholders Dinner"
-        href=""
-        text="AIESEC in Ghana has been at the forefront of youth leadership development for over six decades, and as we celebrate our 60+ years of dedication to nurturing future leaders, we organised a special celebratory dinner to recognise the people who have supported our mission of empowering young people. We also find ourselves in an exciting position to continue the legacy of developing leadership potential in the youth."
-      />
+				href=""
+				text="AIESEC in Ghana has been at the forefront of youth leadership development for over six decades, and as we celebrate our 60+ years of dedication to nurturing future leaders, we organised a special celebratory dinner to recognise the people who have supported our mission of empowering young people. We also find ourselves in an exciting position to continue the legacy of developing leadership potential in the youth."
+			/>
 
-      <FourCardLayout
-        images={section4images}
-        button={false}
-        color="#037EF3"
-        title="Project Name: National Training & Motivation Seminar"
-        subtitle="NTMS 2023 Takoradi"
-        href=""
-        text="NTMS is the second conference of the AIESEC year. It brings together young leaders across Ghana and the world to provide them with needed skills, knowledge and motivation to shape their experience as leaders. The conference is aimed at promoting personal and professional development. NTMS provides a space for members to engage with experts to facilitate personal growth and development."
-      />
+			<FourCardLayout
+				images={section2images}
+				button={false}
+				color="#037EF3"
+				title="Youth & Health Activism."
+				subtitle="Youth & Health Activism"
+				href=""
+				text="In partnership with PharmAccess and Grand Casamora, we launched this event to empower and inspire youth to become proactive advocates for improved health and wellness in their communities. Creating a future where every young person is equipped with the knowledge, resources, and motivation to address critical health issues."
+			/>
 
-      <PartnerWithUs />
-
-      <section className={styles.whatwethink}>
-        <div className={styles.think_left}>
-          <h4>Here&rsquo;s what our past partners think about our projects</h4>
-          <p>
-            This could also be your story to tell. All you need to do is
-            volunteer
-          </p>
-        </div>
-        <div className={styles.think_right}>
-          <div className={styles.think_container}>
-            <div className={styles.think_top}>
-              <Image
-                src={WhatWeThinkImg}
-                alt=""
-                loading="lazy"
-                placeholder="blur"
-              />
-            </div>
-            <div className={styles.think_bottom}>
-              <p>
-                Volunteering is a great way to foster meaningful connections
-                with communities and make a tangible impact. Our partnership
-                with AIESEC has enriched this experience, providing a
-                well-organized platform to contribute meaningfully and create
-                lasting positive change.
-              </p>
-              <Link href="">
-                <FaArrowRight />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-  );
+			<ReverseFourCardLayout
+				images={section4images}
+				button={false}
+				color="#037EF3"
+				title="Project Name: National Training & Motivation Seminar"
+				subtitle="NTMS 2023 Takoradi"
+				href=""
+				text="NTMS is the second conference of the AIESEC year. It brings together young leaders across Ghana and the world to provide them with needed skills, knowledge and motivation to shape their experience as leaders. The conference is aimed at promoting personal and professional development. NTMS provides a space for members to engage with experts to facilitate personal growth and development."
+			/>
+		</main>
+	);
 }
 
 export default Page;
 
 const projectheaderimages: StaticImageData[] = [
-  ProjectsHeader1Img,
-  ProjectsHeader2Img,
-  ProjectsHeader3Img,
+	ProjectsHeader1Img,
+	ProjectsHeader2Img,
+	ProjectsHeader3Img,
 ];
 
 const section2images: StaticImageData[] = [
-  RecentProject1,
-  RecentProject2,
-  RecentProject3,
-  RecentProject4,
+	RecentProject1,
+	RecentProject2,
+	RecentProject3,
+	RecentProject4,
 ];
 
 const section3images: StaticImageData[] = [
-  Projects3rdImg1,
-  Projects3rdImg2,
-  Projects3rdImg3,
-  Projects3rdImg4,
+	Projects3rdImg1,
+	Projects3rdImg2,
+	Projects3rdImg3,
+	Projects3rdImg4,
 ];
 
 const section4images: StaticImageData[] = [
-  Projects4thImg1,
-  Projects4thImg2,
-  Projects4thImg3,
-  Projects4thImg4,
+	Projects4thImg1,
+	Projects4thImg2,
+	Projects4thImg3,
+	Projects4thImg4,
 ];

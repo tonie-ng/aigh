@@ -28,7 +28,6 @@ function FourCardLayout({
 }: FourCardProps) {
   return (
     <section className={styles.fourcard}>
-      <h3 className="section_title">{title}</h3>
       <div className={styles.fourcard_bottom}>
         <div className={styles.fourcard_left}>
           <h4>
